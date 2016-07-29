@@ -1,0 +1,94 @@
+.photo-gallery{
+	background: #0a0a0a;
+}
+
+/*-- Imagem principal --*/
+
+.photo-gallery > .main-image{
+	position: relative;
+	background-color: #000;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: none;
+}
+.photo-gallery > .main-image.loading{
+	background-image: url('indicator.gif');
+}
+	.photo-gallery > .main-image > figure{
+		position: relative;
+		opacity: 1;
+		transition: opacity .5s;
+	}
+	.photo-gallery > .main-image.loading > figure{
+		opacity: 0;
+		transition: none;
+	}
+		.photo-gallery > .main-image > figure img{
+			margin: 0 auto;
+		}
+
+/* Zoom */
+
+.photo-gallery > .main-image > .zoom{
+	display: none;
+}
+
+/* Legenda */
+
+.photo-gallery > .main-image > figure > figcaption{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background: rgba(0, 0, 0, .8);
+	color: #FFF;
+	width: 100%;
+	padding: 10px;
+	
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.photo-gallery > .main-image > figure > figcaption:empty{
+	display: none;
+}
+
+/*-- Lista --*/
+
+.photo-gallery .slider{
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+}
+	.photo-gallery > .slider > li{
+		float: left;
+	}
+		.photo-gallery .slider a{
+			background: none;
+			transition: opacity .5s;
+			opacity: .7;
+		}
+		.photo-gallery .slider a:hover, .photo-gallery .slider a.current{
+			opacity: 1;
+		}
+
+/* Controle */
+
+.photo-gallery .slider-controls{
+	background: #1a1a1a;
+	text-align: center;
+	padding: 5px 0;
+}
+	.photo-gallery .slider-controls > a, .photo-gallery .slider-controls > a:visited, .photo-gallery .slider-controls > a:hover{
+		display: inline-block;
+		background: #0a0a0a;
+		padding: 0 10px;
+		margin: 0 1px;
+		height: 25px;
+		line-height: 25px;
+		color: #AAA;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.photo-gallery .slider-controls > a:hover{
+		background: #0d0d0d;
+	}

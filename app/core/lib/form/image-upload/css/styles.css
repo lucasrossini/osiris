@@ -1,0 +1,20 @@
+/*-- Container --*/
+
+#image-upload-container{
+	overflow: hidden;
+}
+	#image-upload-container > .content{
+		padding: 20px;
+	}
+		#image-upload-container > .content > #crop{
+			display: none;
+		}
+
+/* Botões */
+
+#crop > .buttons{
+	margin-top: 15px;
+}
+	#crop > .buttons > button, #file{
+		margin-right: 10px;
+	}

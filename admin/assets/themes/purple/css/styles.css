@@ -1,0 +1,29 @@
+/*-- Links --*/
+
+a, a:visited, a:hover{
+	color: #5d4593;
+}
+
+/*-- Menu --*/
+
+#header, .menu a.current, .menu a.current:hover, .label.autocomplete .items-container > span{
+	background-color: #5d4593 !important;
+}
+
+/*-- Barra de títulos --*/
+
+#header{
+	background-image: url('../images/header.jpg');
+}
+
+/*-- Paginação --*/
+
+.pagination a.current, .pagination a.current:hover, .pagination a:hover{
+	background-color: #5d4593;
+}
+
+/*-- Tabela --*/
+
+.default-table tr.selected > td{
+	background-color: #efebf8;
+}

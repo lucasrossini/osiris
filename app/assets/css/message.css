@@ -1,0 +1,52 @@
+.form-box{
+	margin-bottom: 20px;
+	padding: 20px;
+	color: #FFF;
+}
+	.form-box a, .form-box a:visited, .form-box a:hover{
+		color: #FFF;
+	}
+	.form-box .message{
+		margin-bottom: 15px;
+	}
+	.form-box ul{
+		margin-left: 30px;
+		list-style: square;
+	}
+		.form-box ul > li{
+			margin-top: 5px;
+		}
+		.form-box ul > li:first-child{
+			margin-top: 0;
+		}
+			.form-box ul > li > ul{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				list-style: disc;
+			}
+	
+	.form-box strong.field{
+		cursor: pointer;
+	}
+	.form-box > .close{
+		float: right;
+		width: 12px;
+		height: 12px;
+		background: url('../images/close-message.png') no-repeat center center;
+		margin-top: 4px;
+		text-indent: -9999px;
+	}
+	.form-box .detail{
+		background: url('../images/tree-nest.png') no-repeat 10px -471px;
+		padding-top: 5px;
+		margin-top: 10px;
+	}
+		.form-box .detail > .inner{
+			margin-left: 20px;
+			padding-left: 10px;
+		}
+
+/* Tipos de mensagem */
+
+.form-box.error, .form-box.error .detail > .inner{ background: #B22D30; }
+.form-box.success, .form-box.success .detail > .inner{ background: #56962C; }

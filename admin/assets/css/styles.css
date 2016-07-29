@@ -1,0 +1,367 @@
+/*-- Geral --*/
+
+body, html{
+	background: #EEE url('../../images/backgrounds/background.png');
+	font-family: 'Open Sans', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+body{ padding-top: 43px; }
+
+/*-- Texto --*/
+
+.text, .text p{
+	text-align: justify;
+	line-height: 160%;
+	margin-bottom: 20px;
+}
+	.text h2{
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.text ul, .text ol{
+		margin-left: 30px;
+	}
+		.text li{ margin-top: 15px; }
+		.text li:first-child{ margin-top: 0; }
+
+/*-- Links --*/
+
+a, a:visited, a:hover{
+	color: #396e97;
+	text-decoration: none;
+}
+	a:hover{
+		text-decoration: underline;
+	}
+
+/* Ícones  */
+
+a.icon.yes, a.icon.yes:visited, a.icon.yes:hover{
+	color: #390;
+	background-image: url('../../images/icons/tick.png');
+}
+a.icon.no, a.icon.no:visited, a.icon.no:hover{
+	color: #CC0000;
+	background-image: url('../../images/icons/cross.png');
+}
+a.icon.connect, a.icon.connect:visited, a.icon.connect:hover{
+	color: #056396;
+	background-image: url('../../images/icons/connect.png');
+}
+a.icon.disconnect, a.icon.disconnect:visited, a.icon.disconnect:hover{
+	color: #056396;
+	background-image: url('../../images/icons/disconnect.png');
+}
+a.icon.add{ background-image: url('../../images/icons/add.png'); }
+
+/* Desabilitado */
+
+.disabled, .disabled:hover, .disabled:visited{
+	cursor: default !important;
+	opacity: .5;
+	text-decoration: none;
+}
+.disabled.show-link{ cursor: pointer !important; }
+
+/*-- Barra topo --*/
+
+#bar{
+	background: #222;
+	color: #FFF;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+	z-index: 100;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+	
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+	#bar a, #bar a:visited, #bar a:hover{
+		color: #FFF;
+	}
+
+/* Bem-vindo */
+
+#bar > .welcome > .photo{
+	float: left;
+	margin-right: 15px;
+	width: 45px;
+	height: 45px;
+}
+#bar > .welcome > .user{
+	font-weight: bold;
+}
+
+/*-- Cabeçalho --*/
+
+#header{
+	background-repeat: repeat-x;
+	background-position: left top;
+	color: #FFF;
+}
+	#header h1{
+		padding: 25px 20px;
+		font-family: 'Roboto Slab', Georgia, serif;
+		font-size: 32px;
+		letter-spacing: -3px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+	}
+		#header h1 .icon{
+			padding-left: 40px;
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+
+	#header h2{
+		background: rgba(0, 0, 0, .5);
+		padding: 15px 20px;
+	}
+		#header h2 > .date{
+			float: right;
+			font-style: italic;
+		}
+
+/*-- Menu lateral --*/
+
+.home-menu span{ background-image: url('../../images/icons/home.png'); }
+.site-menu span{ background-image: url('../../images/icons/go-site.png'); }
+
+#menu-container{
+	position: relative;
+	width: 210px;
+	float: left;
+	margin: 30px 0 30px 0;
+	transition: all .5s;
+}
+#menu-container.hide{
+	margin-left: -210px;
+}
+	#menu-container > .inner{
+		width: 210px;
+	}
+	#menu-container.hide > .inner.fixed{
+		left: -210px;
+	}
+		#menu-container h2, #records-list h2{
+			background: rgba(0, 0, 0, .85);
+			padding: 15px 20px;
+			font-family: 'Roboto Slab', Georgia, serif;
+			font-size: 20px;
+			font-weight: bold;
+			color: #555;
+			text-shadow: 1px 1px 0px #000;
+		}
+		#menu-container h3{
+			background: rgba(0, 0, 0, .8);
+			background-image: url('../../images/arrows/arrow-up.gif');
+			background-repeat: no-repeat;
+			background-position: 20px center;
+			padding: 15px 20px 15px 35px;
+			color: #AAA;
+			font-weight: bold;
+			cursor: pointer;
+			border-top: solid 1px #3a3a3a;
+			border-bottom: solid 1px #2a2a2a;
+		}
+			#menu-container h3.closed{
+				background-image: url('../../images/arrows/arrow-down.gif');
+			}
+			#menu-container .menu-group.closed{
+				display: none;
+			}
+
+		#menu-container .menu-toggler{
+			float: right;
+			margin-top: 6px;
+			opacity: .5;
+			transition: opacity .2s;
+		}
+			#menu-container .menu-toggler:hover{
+				opacity: 1;
+			}
+
+		.menu a, .menu a:visited, .menu a:hover{
+			display: block;
+			background-color: rgba(0, 0, 0, .75);
+			color: #AAA;
+			padding: 15px 20px;
+			text-decoration: none;
+			transition: all .2s;
+		}
+			.menu a > span{
+				padding-left: 22px;
+				background-position: left center;
+				background-repeat: no-repeat;
+			}
+
+		.menu a:hover, .menu a:focus{
+			background-color: rgba(0, 0, 0, .78);
+		}
+		.menu a.current, .menu a.current:hover{
+			background-image: url('../../images/arrows/menu-mask.png');
+			background-position: right center;
+			background-repeat: no-repeat;
+			color: #FFF;
+		}
+
+/*-- Lista de registros --*/
+
+#records-list h2{
+	background: #F7F7F7 url('../../images/backgrounds/dots.png');
+	color: #555;
+	text-shadow: 1px 1px 0px #FFF;
+}
+	#records-list h2 > .new{
+		font-family: "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		text-shadow: none;
+		margin-top: 5px;
+	}
+
+#records-list .content{
+	padding: 20px;
+	background: #F7F7F7;
+	margin-bottom: 40px;
+}
+	#records-list .content .record-count{
+		margin-bottom: 10px;
+	}
+
+/* Pesquisa */
+
+#form_search .label{
+	display: inline-block;
+	padding: 0;
+	border: none;
+	width: 270px;
+	margin-right: 10px;
+}
+	#form_search .label-title{
+		display: none;
+	}
+	#form_search .button-container{
+		display: inline-block;
+		background: none;
+		border: none;
+		padding: 0;
+	}
+		#form_search .button-container button{
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+
+.all-records{
+	float: right;
+	background: url('../../images/icons/list.png') no-repeat left center;
+	padding-left: 20px;
+}
+
+#records-list #search-message{
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #ffeeb0;
+	color: #985d27;
+}
+
+#records-list .form-box.error .message{
+	display: none;
+}
+#records-list .form-box.error ul{
+	list-style: none;
+	margin: 0;
+}
+
+/*-- Formulário de login --*/
+
+#login-box{
+	width: 600px;
+	margin: 0 auto;
+}
+	#login-box form{
+		border-left: solid 10px #DDD;
+	}
+		#login-box .go-to-site{
+			float: right;
+			margin-top: 12px;
+		}
+
+/*-- Conteúdo --*/
+
+#content{
+	position: relative;
+	overflow: hidden;
+	min-width: 350px;
+}
+	#content #main{
+		overflow: hidden;
+		padding: 30px 30px 0;
+	}
+
+/* Permissão */
+
+.permission-error{
+	padding: 10px;
+	background: #ffeeb0;
+	margin-bottom: 15px;
+}
+	.permission-error p{
+		background: url('../../images/icons/default/warning.png') no-repeat left 2px;
+		padding-left: 42px;
+		font-size: 16px;
+		color: #985d27;
+		min-height: 32px;
+	}
+
+/* Imagens do editor */
+
+.editor-content figure{
+	background: #DDD;
+	padding: 10px;
+	text-align: center;
+	
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.editor-content figure.left{
+	margin: 0 20px 20px 0;
+}
+.editor-content figure.right{
+	margin: 0 0 20px 20px;
+}
+	.editor-content figure > img{
+		cursor: pointer;
+		max-width: 100%;
+		height: auto !important;
+	}
+	.editor-content figure > figcaption{
+		display: block;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+
+/* Rodapé */
+
+#footer{
+	padding: 30px;
+	color: #999;
+	text-shadow: 1px 1px 0px #F3F3F3;
+}
+	#footer > .credits{
+		width: 50%;
+	}
+		#footer > .credits > .logo{
+			float: left;
+			margin-right: 30px;
+			position: relative;
+		}
+		#footer > .credits > .logo:active{
+			top: 1px;
+		}

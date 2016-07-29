@@ -1,0 +1,108 @@
+.default-table{
+	border-collapse: collapse;
+	width: 100%;
+	border: solid 1px #E3E3E3;
+}
+	.default-table tr td, .default-table tr th{
+		padding: 12px 15px;
+		background: #FFF;
+		word-break: break-all;
+	}
+	.default-table tr:nth-child(odd) td{
+		background: #FAFAFA;
+	}
+	.default-table tr:hover td{
+		background: #F2F2F2;
+	}
+		.default-table tr td .label{
+			padding: 0;
+			margin: 0;
+			border: none;
+			background: none;
+		}
+		.default-table tr td p{
+			display: block;
+			font-size: 13px;
+			color: #999;
+			font-weight: normal !important;
+		}
+		.default-table tr td .empty-message{
+			color: #999;
+		}
+
+/*-- Cabeçalho --*/
+
+.default-table tr th{
+	background: #E3E3E3;
+	font-weight: bold;
+	text-align: left;
+	text-shadow: 1px 1px 0px #FFF;
+	vertical-align: middle;
+	border-bottom-color: #CCC;
+	white-space: nowrap;
+}
+
+/* Tipos */
+
+.default-table tr th.actions{
+	text-align: center;
+}
+.default-table tr th.checkbox, .default-table tr td.checkbox{
+	text-align: center;
+	width: 20px;
+}
+
+/* Ordenação */
+
+.default-table tr th a.sort, .default-table tr th a.sort:visited{
+	color: #000;
+	padding-right: 12px;
+	text-decoration: none;
+}
+	.default-table tr th a.sort.asc{
+		background: url('../../images/arrows/arrow-down.gif') no-repeat right center;
+	}
+	.default-table tr th a.sort.desc{
+		background: url('../../images/arrows/arrow-up.gif') no-repeat right center;
+	}
+
+/*-- Células --*/
+
+.default-table tr td.date{
+	width: 90px;
+	text-align: center;
+}
+.default-table tr td.value{
+	width: 90px;
+	text-align: right;
+}
+.default-table tr td.center{
+	text-align: center;
+}
+.default-table tr td.number{
+	text-align: right;
+}
+.default-table tr td.action{
+	width: 36px;
+	text-align: center;
+	vertical-align: middle;
+}
+	.default-table tr td.action a{
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+	}
+
+/* Modo de edição/visualização */
+
+.default-table tr.current > td{
+	background-color: #ffeeb0;
+	font-weight: bold;
+}
+	.default-table tr.current > td > p{
+		color: #847858;
+	}
+
+/* Linha selecionada */
+
+.default-table tr.selected > td{ background-color: #edf4f9; }

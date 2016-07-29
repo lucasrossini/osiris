@@ -1,0 +1,74 @@
+/*-- Produtos --*/
+
+.products-list{}
+	.products-list > .product{}
+		.products-list > .product > .image{}
+		.products-list > .product > .name, .products-list > .product > .name:visited, .products-list > .product > .name:hover{}
+		.products-list > .product > .price{}
+			.products-list > .product > .price > .original{}
+			.products-list > .product > .price > .promotional{}
+			.products-list > .product > .price > .discount{}
+			.products-list > .product > .price > .default{}
+			.products-list > .product > .details, .products-list > .product > .details:visited, .products-list > .product > .details:hover{}
+		
+		.products-list > .product > .out-of-stock{}
+
+/* Ordenação */
+
+.order-options{}
+	.order-options > a, .order-options > a:visited, .order-options > a:hover{}
+	.order-options > a.current, .order-options > a.current:visited, .order-options > a.current:hover{}
+
+/*-- Cadastro --*/
+
+#signup h2{}
+
+/*-- Sem resultados --*/
+
+.no-results{}
+
+/*-- Carrinho (menu) --*/
+
+#cart-jump-menu{
+	display: inline-block;
+	position: relative;
+}
+	#cart-jump-menu > a, #cart-jump-menu > a:visited, #cart-jump-menu > a:hover{}
+
+/* Lista de produtos */
+
+#cart-jump-menu > .menu{
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	width: 400px;
+	z-index: 2;
+}
+#cart-jump-menu:hover > .menu{
+	visibility: visible;
+}
+	#cart-jump-menu > .menu > ul{
+		height: 250px;
+	}
+		#cart-jump-menu > .menu > ul li{}
+			#cart-jump-menu > .menu > ul li > .image{}
+			#cart-jump-menu > .menu > ul li > .details{}
+				#cart-jump-menu > .menu > ul li > .details > .name{}
+				#cart-jump-menu > .menu > ul li > .details > .variation{}
+				#cart-jump-menu > .menu > ul li > .details > .quantity{}
+				#cart-jump-menu > .menu > ul li > .details > .price{}
+
+/* Rodapé */
+
+#cart-jump-menu > .menu > .footer{}
+	#cart-jump-menu > .menu > .footer > .subtotal{}
+		#cart-jump-menu > .menu > .footer > .subtotal > .name{}
+		#cart-jump-menu > .menu > .footer > .subtotal > .value{}
+
+	#cart-jump-menu > .menu > .footer > .checkout, #cart-jump-menu > .menu > .footer > .checkout:visited, #cart-jump-menu > .menu > .footer > .checkout:hover{}
+
+/* Vazio */
+
+#cart-jump-menu > .menu > .empty{}
+	#cart-jump-menu > .menu > .empty > a{}

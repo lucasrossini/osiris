@@ -1,0 +1,13 @@
+/*-- Cálculo de frete --*/
+
+.shipping-box{}
+	.shipping-box > h3{}
+	.shipping-box > input{}
+	.shipping-box > button{}
+	.shipping-box > .find-cep{}
+	.shipping-box > .methods{}
+		.shipping-box > .methods > .method{}
+			.shipping-box > .methods > .method > input{}
+			.shipping-box > .methods > .method > .name{}
+			.shipping-box > .methods > .method > .price{}
+			.shipping-box > .methods > .method > .delivery{}

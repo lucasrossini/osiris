@@ -1,0 +1,59 @@
+/*-- Geral --*/
+
+body, html{
+	background: #EEE url('../../../admin/images/backgrounds/background.png') !important;
+	font-family: 'Open Sans', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+.modal{
+	position: relative;
+}
+
+/*-- Cabeçalho --*/
+
+#header{
+	background-repeat: repeat-x;
+	background-position: left top;
+	color: #FFF;
+}
+	#header h1{
+		padding: 25px 20px;
+		font-family: 'Roboto Slab', Georgia, serif;
+		font-size: 32px;
+		letter-spacing: -3px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+	}
+		#header h1 .icon{
+			padding-left: 40px;
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+
+	#header h2{
+		background: rgba(0, 0, 0, .5);
+		padding: 15px 20px;
+	}
+
+/*-- AJAX --*/
+
+.modal > #ajax-loader-container{
+	top: 27px;
+}
+	.modal > #ajax-loader-container > span{
+		max-width: 500px;
+	}
+
+/*-- Containers customizados --*/
+
+/* Alteração de senha */
+
+#password-change-container h1 > .icon{ background-image: url('../../../admin/images/icons/dialogs/lock-edit.png');	}
+
+/* Upload de imagem */
+
+#image-upload-container h1 > .icon{ background-image: url('../../../admin/images/icons/dialogs/image-add.png'); }
+
+/* Inserção de opções */
+
+#option-add-container h1 > .icon{ background-image: url('../../../admin/images/icons/dialogs/option-add.png'); }

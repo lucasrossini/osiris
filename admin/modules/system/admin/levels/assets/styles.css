@@ -1,0 +1,24 @@
+/*-- Tabela --*/
+
+table.permissions .module-name{
+	display: block;
+	margin-top: 5px;
+}
+table.permissions .check-cell{
+	width: 105px;
+	vertical-align: middle;
+}
+
+/*-- Tags --*/
+
+.package-tag{
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #FFF;
+	padding: 2px 4px;
+	cursor: default;
+	border-radius: 3px;
+}
+	.package-tag.system{ background-color: #06C; }
+	.package-tag.site{ background-color: #360; }
+	.package-tag.ecommerce{ background-color: #C00; }

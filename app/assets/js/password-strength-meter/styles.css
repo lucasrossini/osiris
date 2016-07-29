@@ -1,0 +1,36 @@
+.password-strength{
+	display: none;
+	margin-top: 10px;
+}
+	.password-strength > .score{
+		text-transform: uppercase;
+		font-size: 12px;
+		color: #555;
+	}
+
+/*-- Progresso --*/
+
+.password-strength > .progress{
+	display: block;
+	width: 100%;
+	padding: 3px;
+	margin-top: 2px;
+	background: #FFF;
+	border: solid 1px #DDD;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+	.password-strength > .progress > .bar{
+		display: block;
+		height: 8px;
+		width: 0px;
+		transition: all .3s;
+	}
+
+/* Níveis */
+
+.password-strength > .progress > .bar.short{ background-color: #CC0000; }
+.password-strength > .progress > .bar.bad{ background-color: #FF6600; }
+.password-strength > .progress > .bar.good{ background-color: #FFCC00; }
+.password-strength > .progress > .bar.strong{ background-color: #8dc403; }

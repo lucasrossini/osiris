@@ -1,0 +1,98 @@
+/*-- Cabeçalho --*/
+
+#product-details > header{}
+	#product-details > header > h1{}
+	#product-details > header > .code{}
+
+/*-- Informações --*/
+
+#product-details > .info{}
+	#product-details > .info > .details{}
+
+/* Fotos */
+
+#product-details > .info > .images{}
+	#product-details > .info > .images > .main-image{
+		display: table-cell;
+		vertical-align: middle;
+	}
+		#product-details > .info > .images > .main-image > img:first-child{
+			margin: 0 auto;
+		}
+	
+	#product-details > .info > .images > .gallery{}
+	#product-details > .info > .images > .gallery > a{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#product-details > .info > .images > .gallery > a.current{}
+		#product-details > .info > .images > .gallery > a > img{
+			margin: 0 auto;
+		}
+	
+	#product-details > .info > .images > .image-tip{}
+
+/* Preço */
+
+#product-details > .info > .details > .price{}
+	#product-details > .info > .details > .price > .original{}
+		#product-details > .info > .details > .price > .original > del{}
+		#product-details > .info > .details > .price > .original > .save{}
+
+	#product-details > .info > .details > .price > .promotional{}
+	#product-details > .info > .details > .price > .default{}
+	#product-details > .info > .details > .price > .free-shipping{}
+
+/* Variações */
+
+#product-details > .info > .details > .variations-box{}
+	#product-details > .info > .details > .variations-box > h3{}
+	#product-details > .info > .details > .variations-box > ul{}
+		#product-details > .info > .details > .variations-box > ul > li{}
+			#product-details > .info > .details > .variations-box > ul > li > .variation{}
+			#product-details > .info > .details > .variations-box > ul > li > .variation.selected{}
+
+/* Comprar */
+
+#product-details > .info > .details > .buy-container{}
+	#product-details > .info > .details > .buy-container > .buy{}
+	#product-details > .info > .details > .buy-container > .wishlist, #product-details > .info > .details > .buy-container > .wishlist:visited, #product-details > .info > .details > .buy-container > .wishlist:hover{}
+	#product-details > .info > .details > .buy-container > .out-of-stock{}
+	#product-details > .info > .details > .buy-container > .stock-warning{
+		display: none;
+	}
+	#product-details > .info > .details > .buy-container > .variation-warning{
+		display: none;
+	}
+
+/* Categorias */
+
+#product-details > .info > .details > .categories{}
+	#product-details > .info > .details > .categories li{}
+		#product-details > .info > .details > .categories li a, #product-details > .info > .details > .categories li a:visited, #product-details > .info > .details > .categories li a:hover{}
+		#product-details > .info > .details > .categories li ul{}
+
+/* Compartilhar */
+
+#product-details > .share{}
+	#product-details > .share > .btn{
+		display: inline-block;
+		width: 110px;
+	}
+
+/* Descrição */
+
+#product-details > .description{}
+	#product-details > .description > h2{}
+	#product-details > .description p{}
+
+/* Tags */
+
+#product-details > .tags{}
+	#product-details > .tags > h3{}
+	#product-details > .tags > .tag, #product-details > .tags > .tag:visited, #product-details > .tags > .tag:hover{}
+
+/* Outros produtos */
+
+#product-details > .other-products{}
+	#product-details > .other-products > h4{}

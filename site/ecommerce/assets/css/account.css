@@ -1,0 +1,98 @@
+/*-- Cabeçalho --*/
+
+#account-header{}
+	#account-header > .welcome{}
+		#account-header > .welcome > p{}
+		#account-header > .welcome > p.not-me{}
+			#account-header > .welcome > p > .name{}
+	
+	#account-header > .logout, #account-header > .logout:visited, #account-header > .logout:hover{}
+
+/*-- Menu --*/
+
+#account-menu{}
+	#account-menu > a, #account-menu > a:visited, #account-menu > a:hover{}
+	#account-menu > a.current, #account-menu > a.current:hover{}
+
+/*-- Dashboard --*/
+
+#account-dashboard .box{}
+	#account-dashboard .box > h2{}
+	#account-dashboard #orders{}
+	#account-dashboard #searches{}
+
+/*-- Pedidos realizados --*/
+
+#orders-list table.orders{}
+	#orders-list table.orders tr > td.code{}
+	#orders-list table.orders tr > td.total{}
+	#orders-list table.orders tr > td.datetime{}
+	#orders-list table.orders tr > td.status{}
+		#orders-list table.orders tr > td.status.s0{}
+		#orders-list table.orders tr > td.status.s1{}
+		#orders-list table.orders tr > td.status.s2{}
+		#orders-list table.orders tr > td.status.s3{}
+
+	#orders-list table.orders tr > td.options{}
+
+/* Detalhes */
+
+#orders-list table.orders tr.current{}
+#orders-list table.orders tr > td.details{}
+	#orders-list table.orders tr > td.details > .row{}
+		#orders-list table.orders tr > td.details > .row > h3{}
+		#orders-list table.orders tr > td.details > .row > .item{}
+			#orders-list table.orders tr > td.details > .row > .item > .name{}
+
+/* Progresso */
+
+#orders-list table.orders tr > td.details .progress{}
+	#orders-list table.orders tr > td.details .progress > .step{}
+	#orders-list table.orders tr > td.details .progress > .step.s0{}
+	#orders-list table.orders tr > td.details .progress > .step.s1{}
+	#orders-list table.orders tr > td.details .progress > .step.s2{}
+		#orders-list table.orders tr > td.details .progress > .step > .title{}
+		#orders-list table.orders tr > td.details .progress > .step > .datetime{
+			display: none;
+		}
+	
+	#orders-list table.orders tr > td.details .progress > .step.done{}
+	#orders-list table.orders tr > td.details .progress > .step.done.s0{}
+	#orders-list table.orders tr > td.details .progress > .step.done.s1{}
+	#orders-list table.orders tr > td.details .progress > .step.done.s2{}
+		#orders-list table.orders tr > td.details .progress > .step.done > .title{}
+		#orders-list table.orders tr > td.details .progress > .step.done > .datetime{
+			display: block;
+		}
+
+/* Previsão de entrega */
+
+#orders-list table.orders tr > td.details .delay{}
+	#orders-list table.orders tr > td.details .delay > .name{}
+	#orders-list table.orders tr > td.details .delay > .date{}
+	#orders-list table.orders tr > td.details .delay > .track-shipping, #orders-list table.orders tr > td.details .delay > .track-shipping:visited, #orders-list table.orders tr > td.details .delay > .track-shipping:hover{}
+
+/* Lista de produtos */
+
+#orders-list table.orders tr > td.details table.products{}
+	#orders-list table.orders tr > td.details table.products tr > th, #orders-list table.orders tr > td.details table.products tr > td{}
+	#orders-list table.orders tr > td.details table.products tr > th{}
+		#orders-list table.orders tr > td.details table.products .image{}
+		#orders-list table.orders tr > td.details table.products .name{}
+		#orders-list table.orders tr > td.details table.products .variation{}
+
+/* Contato */
+
+#orders-list table.orders tr > td.details > .contact{}
+	#orders-list table.orders tr > td.details > .contact > h4{}
+	#orders-list table.orders tr > td.details > .contact > p{}
+	#orders-list table.orders tr > td.details > .contact > a, #orders-list table.orders tr > td.details > .contact > a:visited, #orders-list table.orders tr > td.details > .contact > a:hover{}
+
+/*-- Produtos visualizados --*/
+
+#viewed-products{}
+
+/*-- Pesquisas realizadas --*/
+
+#searches{}
+	#searches > .term, #searches > .term:visited, #searches > .term:hover{}

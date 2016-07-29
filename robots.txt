@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /admin/
+Disallow: /app/
+Disallow: /class/
+Disallow: /site/
+Disallow: /subdomains/
+Disallow: /temp/
+Disallow: /uploads/
+
+Sitemap: http://osiris.loc/sitemap.xml

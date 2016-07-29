@@ -1,0 +1,74 @@
+/*-- Posicionamento --*/
+
+.clear{ clear: both; }
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.left{ float: left; }
+.right{ float: right; }
+.center{ text-align: center; }
+
+.hide{ display: none; }
+
+/*-- Imagens --*/
+
+img.lazy{
+	background: #FFF url('../images/indicator.gif') no-repeat center center;
+	padding: 0.000001px;
+}
+
+/* Container */
+
+.image-container{
+	display: table-cell;
+	background: #FFF url('../images/indicator.gif') no-repeat center center;
+	text-align: center;
+	vertical-align: middle;
+}
+	.image-container > img{
+		display: inline;
+		vertical-align: middle;
+	}
+
+/*-- Ícones --*/
+
+a.icon{
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/*-- Texto --*/
+
+.truncate{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.hidden-text{
+	text-indent: -9999px;
+}
+
+/*-- Formulário --*/
+
+.placeholder{ color: #AAA !important; }
+
+/* Contagem de caracteres */
+
+.char-count{
+	display: block;
+	margin-top: 10px;
+	padding-left: 20px;
+	background: url('../../../admin/images/icons/keyboard.png') no-repeat left center;
+	color: #555;
+}
+	.char-count .chars-left{
+		font-weight: bold;
+	}

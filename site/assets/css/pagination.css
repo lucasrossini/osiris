@@ -1,0 +1,13 @@
+/*-- Paginação --*/
+
+.pagination{}
+
+/* Links */
+
+.pagination > a, .pagination > a:visited{}
+	.pagination > a:hover, .pagination > a.current, .pagination > a.current:hover{}
+	.pagination > a.current, .pagination > a.current:hover{}
+
+/* Inativos */
+
+.pagination > .inactive, .pagination > .inactive:visited, .pagination > .inactive:hover{}

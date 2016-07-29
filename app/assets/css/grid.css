@@ -1,0 +1,10 @@
+.grid > .item{
+	float: left;
+	width: 100%;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+	.grid.c2 > .item{ width: 50%; }
+	.grid.c3 > .item{ width: 33.333%; }
+	.grid.c4 > .item{ width: 25%; }

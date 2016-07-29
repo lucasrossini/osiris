@@ -1,0 +1,65 @@
+#page.site{ padding-top: 56px !important; }
+
+#admin-bar{
+	background: #202020 url('../../images/backgrounds/admin-bar.png');
+	font-family: 'Open Sans', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* Links */
+
+#admin-bar a, #admin-bar a:visited, #admin-bar a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+	#admin-bar a:hover{
+		text-decoration: underline;
+	}
+
+/* Selecionar módulo */
+
+#admin-bar select{
+	cursor: pointer;
+	background: #FFF;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .04) inset;
+	font-size: 13px;
+	border: solid 1px #DDD;
+	color: #333;
+	border-radius: 3px;
+	padding: 7px 10px;
+	margin-left: 5px;
+}
+	#admin-bar select > optgroup{
+		font-weight: bold;
+		padding: 5px;
+		font-size: 14px;
+	}
+		#admin-bar select > optgroup > option{
+			font-weight: normal;
+			font-size: 13px;
+			padding-left: 20px;
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+
+/* Estrutura */
+
+#admin-bar > .left{
+	background: url('../../images/icons/lock-large.png') no-repeat left center;
+	padding-left: 30px;
+}
+#admin-bar > .right{
+	height: 36px;
+	line-height: 36px;
+}

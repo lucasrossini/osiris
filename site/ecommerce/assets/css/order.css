@@ -1,0 +1,15 @@
+#order h1{}
+#order h2{}
+#order h3{}
+
+/*-- Prazo de entrega --*/
+
+#order .delivery-days{}
+	#order .delivery-days > h4{}
+	#order .delivery-days > span{}
+
+/*-- Botões --*/
+
+#order .buttons{}
+	#order .buttons > a.home, #order .buttons > a.home:visited, #order .buttons > a.home:hover{}
+	#order .buttons > a.account, #order .buttons > a.account:visited, #order .buttons > a.account:hover{}

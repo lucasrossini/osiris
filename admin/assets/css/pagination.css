@@ -1,0 +1,30 @@
+/*-- Paginação --*/
+
+.pagination{
+	margin-top: 20px;
+	text-align: right;
+}
+
+/* Links */
+
+.pagination a, .pagination a:visited{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+	.pagination a:hover{
+		color: #FFF;
+	}
+	.pagination a.current, .pagination a.current:hover{
+		color: #FFF;
+		font-weight: bold;
+		cursor: default;
+	}
+
+/* Inativos */
+
+.pagination .inactive, .pagination .inactive:visited, .pagination .inactive:hover{
+	background: none;
+	color: #CCC;
+	cursor: default;
+}

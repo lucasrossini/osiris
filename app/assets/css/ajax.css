@@ -1,0 +1,36 @@
+#ajax-loader-container{
+	position: fixed;
+	top: 70px;
+	left: 50%;
+	z-index: 999;
+}
+	#ajax-loader-container > span{
+		display: inline-block;
+		text-align: center;
+		position: relative;
+		left: -50%;
+		font-size: 16px;
+		letter-spacing: -1px;
+		padding: 7px 14px;
+		max-width: 700px;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+		
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+/*-- Carregando --*/
+
+#ajax-loader{
+	background: #ffe090;
+	color: #111;
+	cursor: wait;
+}
+
+/*-- Resultado --*/
+
+#ajax-result{
+	color: #FFF;
+}
+	#ajax-result.error{ background: #CC0000; }
+	#ajax-result.success{ background: #56962C; }

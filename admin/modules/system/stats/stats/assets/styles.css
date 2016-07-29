@@ -1,0 +1,54 @@
+.stats-box{
+	background: #FFF;
+	border: solid 1px #DDD;
+	border-top: solid 3px #DDD;
+	padding: 25px;
+	margin-bottom: 30px;
+}
+	.stats-box > .grid > .item{ padding: 0 15px; }
+	.stats-box > .grid > .item:first-child{ padding-left: 0; }
+	.stats-box > .grid > .item:last-child{ padding-right: 0; }
+		.stats-box h3{
+			font-family: 'Roboto Slab', Georgia, serif;
+			font-size: 22px;
+			letter-spacing: -1px;
+			margin-bottom: 20px;
+			padding: 10px 15px;
+			background: url('../../../../../images/backgrounds/dots.png');
+		}
+			.stats-box h3 > .more{
+				font-family: "Open Sans", "Trebuchet MS", Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				letter-spacing: normal;
+				float: right;
+				margin-top: 5px;
+			}
+		
+		.stats-box .value{
+			font-size: 36px;
+			color: #81A300;
+			letter-spacing: -1px;
+		}
+			.stats-box .value > .info{
+				font-size: 18px;
+				color: #999;
+			}
+
+/* Lista */
+
+.stats-box ul, .stats-box ol{
+	margin-left: 30px;
+}
+	.stats-box ul > li, .stats-box ol > li{ margin-top: 10px; }
+	.stats-box ul > li:first-child, .stats-box ol > li:first-child{ margin-top: 0; }
+		.stats-box ul .info, .stats-box ol .info{
+			display: block;
+			color: #999;
+		}
+
+/* Vazio */
+
+.stats-box .empty{
+	text-align: center;
+	color: #999;
+}

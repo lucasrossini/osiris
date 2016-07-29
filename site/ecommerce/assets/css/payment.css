@@ -1,0 +1,5 @@
+#payment{}
+	#payment > h2{}
+	#payment > .pagseguro-flag{}
+	#payment > .loading{}
+	#payment > .redirect-warning{}

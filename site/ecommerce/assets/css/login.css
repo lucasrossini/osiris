@@ -1,0 +1,13 @@
+#login > .box{}
+	#login > .box > h2{}
+	#login > .box > form{}
+
+/*-- Caixa de login --*/
+
+#login-box{}
+	#login-box .recover-password, #login-box .recover-password:visited, #login-box .recover-password:hover{}
+
+/*-- Caixa de cadastro --*/
+
+#signup-box{}
+	#signup-box .find-cep, #signup-box .find-cep:visited, #signup-box .find-cep:hover{}

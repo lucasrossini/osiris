@@ -1,0 +1,32 @@
+# -- Reescrita de URLs --
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+ErrorDocument 404 /
+
+RewriteRule sitemap\.xml site/index.php
+
+RewriteRule ^([A-Z,0-9,a-z,_-]+)\/?$ $1.php
+RewriteRule !\.(gif|jpg|jpeg|txt|png|css|js|ico|bmp|swf|pdf|cur)$ site/index.php
+
+# -- Compressão de arquivos JavaScript e CSS --
+
+<IfModule mod_deflate.c>
+    <FilesMatch "\.(js|css)$">
+        SetOutputFilter DEFLATE
+    </FilesMatch>
+</IfModule>
+
+# -- Controle de cache --
+
+FileETag MTime Size
+<IfModule mod_expires.c>
+   <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|js|css)$">
+      ExpiresActive on
+      ExpiresDefault "access plus 1 year"
+   </FilesMatch>
+</IfModule>

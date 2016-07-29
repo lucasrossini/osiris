@@ -1,0 +1,19 @@
+#browser-warning{
+	display: block;
+	background: #FFFCDF;
+	border-bottom: solid 1px #DFDDCB;
+	color: #333;
+	padding: 8px 0;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+	#browser-warning .warning-title{
+		font-size: 16px;
+	}
+
+#page.admin{ padding-top: 70px; }
+#page.admin #bar, #page.site #admin-bar{ top: 35px; }

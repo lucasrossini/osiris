@@ -1,0 +1,13 @@
+#categories-list > .letter{}
+
+#categories-list > ul{}
+	#categories-list > ul > li{}
+		#categories-list > ul > li > .name{}
+		#categories-list > ul > li > .count{}
+
+/*-- Subcategorias --*/
+
+#categories-list > ul > li > ul{}
+	#categories-list > ul > li > ul > li{}
+		#categories-list > ul > li > ul > li > .name{}
+		#categories-list > ul > li > ul > li > .count{}

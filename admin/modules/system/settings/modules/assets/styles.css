@@ -1,0 +1,20 @@
+#modules-list .name{
+	padding: 10px 15px 10px 35px;
+	font-size: 16px;
+	letter-spacing: -1px;
+	display: block;
+	margin-bottom: 15px;
+	background-color: #E9E9E9;
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	border-radius: 5px;
+}
+#modules-list .bottom{
+	margin-top: 10px;
+}
+	#modules-list .path{
+		color: #999;
+	}
+	#modules-list .actions{
+		float: right;
+	}

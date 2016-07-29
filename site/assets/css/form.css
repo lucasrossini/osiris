@@ -1,0 +1,365 @@
+/*-- Input --*/
+
+input, textarea, select, .scrollbox{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+	input:focus, textarea:focus, select:focus{}
+	input:disabled, textarea:disabled, select:disabled{}
+	input:disabled:focus, textarea:disabled:focus, select:disabled:focus{}
+
+/* Tamanhos e alinhamentos */
+
+input, textarea, select, .checkgroup{ width: 100%; }
+
+input.large, select.large, textarea.large{ width: 650px; }
+input.medium, select.medium, textarea.medium{ width: 430px; }
+input.small, select.small, textarea.small{ width: 200px; }
+input.tiny, select.tiny, textarea.tiny{ width: 100px; }
+.date-input-container input{ width: 100px !important; }
+
+input.numeric{ text-align: right; }
+
+/* Valor monetário */
+
+.money-input-container{
+	position: relative;
+	display: inline-block;
+}
+	.money-input-container > input{
+		text-align: right;
+		width: 150px !important;
+		padding-left: 50px;
+	}
+	.money-input-container > .unit{
+		display: inline-block;
+		position: absolute;
+		top: 1px;
+		left: 1px;
+		font-weight: bold;
+		width: 40px;
+		text-align: center;
+		cursor: default;
+	}
+
+/* Autocomplete */
+
+input.ui-autocomplete-loading{
+	background-image: url('../../../app/assets/images/indicator.gif');
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+}
+
+/* Padrão */
+
+input[type="checkbox"], input[type="radio"]{
+	width: auto !important;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+}
+input[type="file"]{
+	width: auto !important;
+}
+
+/* Scrollbox */
+
+.scrollbox{
+	height: 250px;
+	overflow: auto;
+}
+
+/*-- Textarea --*/
+
+textarea{
+	height: 150px;
+	max-width: 100%;
+}
+
+/* Tamanhos */
+
+textarea.short{ height: 70px; }
+textarea.tall{ height: 250px; }
+
+/* Expansível */
+
+textarea.expandable{ transition: all .5s; }
+	textarea.expandable.expanded{ height: 200px; }
+
+/* CKEditor */
+
+.cke_contents textarea{
+	border: none;
+	box-shadow: none;
+}
+
+/*-- Select --*/
+
+select{ cursor: pointer; }
+
+/*-- Label --*/
+
+.label, .inline-labels, .button-container{
+	display: block;
+	position: relative;
+}
+	.label-title{
+		display: block;
+	}
+	.label .empty-content{}
+
+/* Inline */
+
+.inline-labels:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+	.inline-labels .label{
+		float: left;
+		width: 50%;
+
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	.inline-labels.grid-3 .label{ width: 33.333%; }
+	.inline-labels.grid-4 .label{ width: 25%; }
+
+/* Dica */
+
+.label .field-tip{
+	display: block;
+}
+	.label .field-tip strong, .label .field-tip a, .label .field-tip a:visited, .label .field-tip a:hover{}
+
+/*-- Checkbox / Checkgroup --*/
+
+label.checkbox{ cursor: pointer; }
+
+.checkgroup legend{}
+.checkgroup label{
+	display: block;
+	cursor: pointer;
+}
+.checkgroup-options{
+	display: block;
+}
+
+/*-- Fieldset --*/
+
+fieldset legend{}
+	fieldset legend > span{}
+
+/* Fieldgroup */
+
+.fieldgroup{}
+	.fieldgroup .inline-labels{
+		padding-right: 30px;
+		position: relative;
+	}
+
+.remove-item{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.label.multiple-items-container{
+	position: relative;
+}
+	.label.multiple-items-container .info{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+/*-- Botão --*/
+
+button, button:hover,
+button:disabled:active, button:disabled:hover{
+	cursor: pointer;
+}
+button, .button-container button.small{}
+	button:hover{}
+	button:active{}
+	button:disabled{
+		opacity: .5;
+		cursor: default;
+	}
+
+/* Container */
+
+.button-container button{
+	margin-left: 15px;
+}
+	.button-container button:first-child{
+		margin-left: 0;
+	}
+
+/*-- Captcha --*/
+
+.captcha-field{
+	background: #EEE;
+	padding: 15px;
+	width: 500px;
+}
+	.captcha-field .img-container{
+		float: left;
+		margin-right: 15px;
+	}
+		.captcha-field .img-container a, .captcha-field .img-container a:visited, .captcha-field .img-container a:hover{
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			background: #DDD;
+			color: #555;
+			text-shadow: 1px 1px 0px #EEE;
+			padding: 10px 0;
+		}
+			.captcha-field .img-container a:hover{
+				background: #E2E2E2;
+			}
+	
+	.captcha-field .input-container{
+		overflow: hidden;
+	}
+		.captcha-field .input-container p{
+			margin-bottom: 10px;
+		}
+		.captcha-field .input-container input{
+			font-size: 36px;
+			text-align: center;
+		}
+
+/*-- Avaliação --*/
+
+.rating-container .rate{
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding-right: 3px;
+	background: url('../../../app/assets/images/rating-star.png') no-repeat left top;
+	cursor: pointer;
+}
+.rating-container.small .rate{
+	display: block;
+	width: 12px;
+	height: 12px;
+	float: left;
+	padding-right: 3px;
+	background: url('../../../app/assets/images/rating-star-small.png') no-repeat left top;
+	cursor: pointer;
+}
+.rating-container.readonly .rate{
+	cursor: default;
+}
+.rating-container .rate.lighted{
+	background-position: left bottom !important;
+}
+.rating-container .rate.current{
+	background-position: left bottom;
+}
+.rating-container .rate.current.hover{
+	background-position: left top;
+}
+.rating-container .score{
+	float: left;
+	margin-left: 10px;
+}
+	.rating-container .score span{
+		line-height: 20px;
+	}
+	.rating-container.small .score span{
+		line-height: 12px;
+	}
+
+/*-- Validação --*/
+
+.required-message{}
+span.required{
+	color: #CC0000;
+	font-weight: normal;
+}
+	.label .required{
+		cursor: help;
+	}
+
+/*-- Upload de imagem --*/
+
+.image-upload-target img{
+	display: block;
+}
+.image-control-links{}
+
+/*-- Upload de arquivos --*/
+
+.uploadify-actions{}
+.uploadify-queue{
+	margin-bottom: 0 !important;
+}
+	.uploadify-queue-item{}
+
+/*-- Autocomplete --*/
+
+.autocomplete .items-container > span{
+	display: inline-block;
+	margin: 15px 15px 0 0;
+	padding: 6px 12px;
+	color: #FFF;
+	font-size: 11px;
+}
+	.autocomplete .items-container > span > .remove{
+		display: inline-block;
+		text-indent: -9999px;
+		width: 8px;
+		height: 8px;
+		background: url('../../images/icons/tag-remove.png') no-repeat center center;
+		margin-left: 10px;
+		position: relative;
+		top: 4px;
+	}
+
+/*-- Abas --*/
+
+.tabs-container > .tab, .tabs-container > .tab:visited{
+	display: inline-block;
+	text-decoration: none;
+}
+.tabs-container > .tab:hover{}
+.tabs-container > .tab.current, .tabs-container > .tab.current:visited{}
+
+/* Conteúdo */
+
+.tab-content{ display: none; }
+.tab-content.current{ display: block; }
+
+/*-- Texto --*/
+
+h3.group{}
+
+/*-- Links --*/
+
+a.password-edit{
+	display: inline-block;
+	margin-top: 10px;
+	background-image: url('../../../admin/images/icons/lock.png');
+}
+a.select-appender{
+	background-image: url('../../../admin/images/icons/add.png');
+	display: inline-block;
+	margin-top: 15px;
+}
+
+/* Checkbox */
+
+a.check-all{ background-image: url('../../../admin/images/icons/checkbox.png'); }
+a.uncheck-all{ background-image: url('../../../admin/images/icons/checkbox-disabled.png'); }
+
+/* Upload de imagem */
+
+a.image-upload{ background-image: url('../../../app/core/lib/form/image-upload/images/image.png'); }
+a.image-remove{ background-image: url('../../../app/core/lib/form/image-upload/images/slash.png'); }

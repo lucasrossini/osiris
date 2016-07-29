@@ -1,0 +1,17 @@
+/*-- Status --*/
+
+.status-0{ color: #F99F00; }
+.status-1{ color: #009DCA; }
+.status-2{ color: #77A800; }
+.status-3{ color: #A5002B; }
+
+/* Alterar */
+
+.change-status{
+	display: block;
+	margin-top: 20px;
+}
+	.change-status > select{
+		width: 250px;
+		margin: 0 10px;
+	}

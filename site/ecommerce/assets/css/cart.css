@@ -1,0 +1,75 @@
+/*-- Tabela de produtos --*/
+
+.cart-products{}
+	.cart-products tr > td, .cart-products tr > th{}
+	.cart-products tr > th{}
+
+/* Produto */
+
+.cart-products tr > td.product > .image{}
+.cart-products tr > td.product > .details{}
+	.cart-products tr > td.product > .details > .name{}
+	.cart-products tr > td.product > .details > .variation{}
+		.cart-products tr > td.product > .details > .variation > .name{}
+		.cart-products tr > td.product > .details > .variation > .option{}
+
+/* Quantidade */
+
+.cart-products tr > td.quantity .spinner{}
+.cart-products tr > td.quantity button{}
+.cart-products tr > td.quantity .delete{}
+
+/* Preço */
+
+.cart-products tr > td.unit-price{}
+.cart-products tr > td.total-price{}
+
+/* Subtotal */
+
+.cart-products tr.subtotal > th{}
+.cart-products tr.subtotal > td{}
+
+/* Frete */
+
+.cart-products tr.shipping > th{}
+.cart-products tr.shipping > td{}
+
+/* Total */
+
+.cart-products tr.total > th{}
+.cart-products tr.total > td{}
+
+.cart-products tr.subtotal > th, .cart-products tr.shipping > th, .cart-products tr.total > th{
+	text-align: right;
+}
+
+/*-- Vazio --*/
+
+#cart .empty{}
+	#cart .empty > a{}
+
+/*-- Botões --*/
+
+#cart .buttons{}
+	#cart .buttons > .continue{}
+	#cart .buttons > .clear{}
+	#cart .buttons > .checkout{}
+
+/*-- Checkout --*/
+
+#checkout h2{}
+#checkout .back-to-cart{}
+
+/* Endereço */
+
+#checkout .shipping-address .address-list > label{
+	display: block;
+}
+	#checkout .shipping-address .address-list > label input{}
+
+/* Pagamento */
+
+#checkout #pay{}
+	#checkout #pay > .gift{}
+	#checkout #pay > .buy{}
+	#checkout #pay > .info{}

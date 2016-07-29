@@ -1,0 +1,16 @@
+.address-list{}
+	.address-list address{}
+	.address-list address.default{}
+		.address-list address > h3{}
+		.address-list address > p{}
+		.address-list address > .buttons{}
+			.address-list address > .buttons > a, .address-list address > .buttons > a:visited, .address-list address > .buttons > a:hover{}
+			.address-list address > .buttons > a.set-default{}
+			.address-list address > .buttons > a.edit{}
+			.address-list address > .buttons > a.delete{}
+
+/*-- Criar novo --*/
+
+.address-list address.new{}
+	.address-list address.new a, .address-list address.new a:visited, .address-list address.new a:hover{}
+	.address-list address.new a > .plus{}
